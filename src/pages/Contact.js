@@ -38,7 +38,7 @@ class Contact extends React.Component {
       disabled: true
     });
 
-    axios.post('/api/email', this.state)
+    axios.post('https://portfolio-nodebackend.herokuapp.com/api/email', {data: this.state })
       .then((res) => {
         console.log(res.data)
         if (res.data.success) {
