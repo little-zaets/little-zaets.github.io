@@ -5,7 +5,7 @@ import Button from "react-bootstrap/Button";
 
 import Hero from "../components/Hero";
 import Content from "../components/Content";
-import Axios from "axios";
+import axios from "axios";
 
 class Contact extends React.Component {
   constructor(props) {
@@ -38,8 +38,9 @@ class Contact extends React.Component {
       disabled: true
     });
 
-    Axios.post("http://localhost:3030/api/email", this.state)
+    axios.post('/api/email', this.state)
       .then((res) => {
+        console.log(res.data)
         if (res.data.success) {
           this.setState({
             disabled: false,
@@ -105,7 +106,7 @@ class Contact extends React.Component {
 
             <Button
               className="d-inline-block"
-              variant="primary"
+              variant="secondary"
               type="submit"
               disabled={this.state.disabled}
             >

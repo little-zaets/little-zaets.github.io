@@ -4,10 +4,12 @@ import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import Footer from './components/Footer';
+import icon from './assets/initials.jpg';
 import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import "./App.css";
+import "./style.css";
 
 class App extends React.Component {
   constructor(props) {
@@ -20,7 +22,7 @@ class App extends React.Component {
         { title: 'Contact', path: '/contact' }
       ],
       home: {
-        title: 'Feeling Lucky? The Answer is Yes. Always.',
+        title: 'Be Tenacious',
         subTitle: 'Failure is Just a Milestone to Success',
         content: 'Check Out my Projects Below'
       },
@@ -28,7 +30,7 @@ class App extends React.Component {
         title: 'About Me'
       },
       contact: {
-        title: 'Let\'s Talk'
+        title: 'Let\'s Chat'
       }
     };
   }
@@ -37,18 +39,24 @@ class App extends React.Component {
       <Router>
         <Container className="p-0" fluid={true}>
           <Navbar className="border-bottom" bg="transparent" expand="lg">
-            <Navbar.Brand>Rina Volovich</Navbar.Brand>
+            <Navbar.Brand>
+              <h3 className="header-icon">
+                <Link to="/" className="link">
+                  RV
+                </Link>
+              </h3>
+            </Navbar.Brand>
 
             <Navbar.Toggle aria-controls="navbar-toggle" className="border-0" />
             <Navbar.Collapse id="navbar-toggle">
               <Nav className="ml-auto" activeKey="/">
-                <Link className="nav-link" to="/">
+                <Link className="nav-link nav-custom link" to="/">
                   Home
                 </Link>
-                <Link className="nav-link" to="/about">
+                <Link className="nav-link nav-custom link" to="/about">
                   About
                 </Link>
-                <Link className="nav-link" to="/contact">
+                <Link className="nav-link nav-custom link" to="/contact">
                   Contact
                 </Link>
               </Nav>
@@ -68,7 +76,6 @@ class App extends React.Component {
           />
           <Route
             path="/about"
-            exact
             render={() => (
               <About
                 title={this.state.about.title}
@@ -79,7 +86,6 @@ class App extends React.Component {
           />
           <Route
             path="/contact"
-            exact
             render={() => (
               <Contact
                 title={this.state.contact.title}

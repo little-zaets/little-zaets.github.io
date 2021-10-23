@@ -9,43 +9,25 @@ const About = (props) => {
 
       <Content>
         <p>
-          Greetings, my name is Rina. I'm a web developer with experience
-          in React, Node JS, Express JS and PostreSQL. 
+          Greetings, my name is Rina. I'm a web developer with experience in
+          React, Node JS, Express JS and PostreSQL.
+        </p>
+        <p>
+          My enthusiasm for coding developed as I strived to improve my
+          organization’s efficiency and processes in light of new softwares and
+          tools that were constantly introduced. By leveraging the priceless
+          knowledge I gained from my past experiences, I bring a gapless,
+          cross-functional perspective to the development process, rather than
+          the common block-scope view.
+        </p>
+        <p>
+          I aspire to combine my operational and technical experience in order to enable an effective development process by
+          bridging the gap between my organization's departments.
         </p>
 
         <p>
-          I aspire to combine my operational and technical experiece in order to be an effective Product Manager.
-        </p>
-
-        <p>
-          I am constantly working to improve and learn new technologies, and welcome any challenge that comes my way.
-        </p>
-
-        <p>
-          My latest project, Dev Grub, is a cookbook for developers. You can
-          check it out{" "}
-          <a
-            href="https://devgrub.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            here
-          </a>
-          , or on the homepage. It is built with Angular, MongoDB, Express JS,
-          and Node JS. However, I will be rebuilding it using React in the
-          coming months
-        </p>
-
-        <p>
-          When I'm not learning something new chances are I'm creating some
-          YouTube videos. You can find those{" "}
-          <a
-            href="http://www.youtube.com/c/GarrettLove1"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            here
-          </a>
+          I am constantly working to improve and learn new technologies, and
+          welcome any challenge that comes my way.
         </p>
       </Content>
     </div>

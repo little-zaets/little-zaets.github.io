@@ -5,21 +5,19 @@ import Col from "react-bootstrap/Col";
 
 const Footer = () => {
 	return (
-		<div>
-			<footer className="mt-5">
-				<Container fluid={true}>
-					<Row className="border-top justify-content-between p-3">
-						<Col className="p-0" md={3} sm={12}>
-							Rina Volovich
-						</Col>
-						<Col className="p-0 d-flex justify-content-end" md={3}>
-							This site was made by Rina Volovich
-						</Col>
-					</Row>
-				</Container>
-			</footer>
-		</div>
-	);
+      <footer className="mt-5">
+        <Container fluid={true}>
+          <Row className="border-top flex-nowrap justify-content-between align-items-center p-3">
+            <Col className="p-0" md={4}>
+              Rina Volovich
+            </Col>
+            <Col className="p-0 flex-column flex-nowrap justify-content-end" md={4}>
+              Made with &hearts; by Rina Volovich 2021
+            </Col>
+          </Row>
+        </Container>
+      </footer>
+  );
 }
 
 export default Footer;
