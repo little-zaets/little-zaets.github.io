@@ -9,7 +9,7 @@ const Hero = (props) => {
     <div>
       <Jumbotron className="bg-transparent jumbotron-fluid p-0">
         <Container fluid={true}>
-          <Row className="justify-content-around pt-5">
+          <Row className="justify-content-around pt-4">
             <Col md={8} sm={12}>
               {props.title && (
                 <h2 className="text display-2 font-weight-bold">

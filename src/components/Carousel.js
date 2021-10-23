@@ -32,9 +32,9 @@ class Carousel extends Component {
         {
           id: 2,
           title: "Data Boss",
-          subTitle: "Developers.Institute hackathon entry",
+          subTitle: "DI hackathon entry using Node JS",
           imgSrc: boss,
-          link: "",
+          link: "https://data-boss-ui.herokuapp.com/",
           selected: false
         }
       ]

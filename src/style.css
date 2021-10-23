@@ -15,7 +15,9 @@
   width: auto;
   max-width: 300; */
 }
-
+.g-card-image:hover {
+  cursor: pointer;
+}
 
 .g-card-info {
   margin-top: 10px;
@@ -91,4 +93,7 @@ a.nav-link.nav-custom {
 .link {
   text-decoration: none !important;
   z-index: 1 !important;
+}
+.contact-image {
+  height: 50%;
 }
