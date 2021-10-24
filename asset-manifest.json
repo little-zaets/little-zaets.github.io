@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.26ac8093.chunk.css",
-    "main.js": "/portfolio/static/js/main.3e7ec237.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.3e7ec237.chunk.js.map",
-    "runtime-main.js": "/portfolio/static/js/runtime-main.828f207e.js",
-    "runtime-main.js.map": "/portfolio/static/js/runtime-main.828f207e.js.map",
-    "static/css/2.081f420c.chunk.css": "/portfolio/static/css/2.081f420c.chunk.css",
-    "static/js/2.8cf0dad2.chunk.js": "/portfolio/static/js/2.8cf0dad2.chunk.js",
-    "static/js/2.8cf0dad2.chunk.js.map": "/portfolio/static/js/2.8cf0dad2.chunk.js.map",
-    "index.html": "/portfolio/index.html",
-    "static/css/2.081f420c.chunk.css.map": "/portfolio/static/css/2.081f420c.chunk.css.map",
-    "static/css/main.26ac8093.chunk.css.map": "/portfolio/static/css/main.26ac8093.chunk.css.map",
-    "static/js/2.8cf0dad2.chunk.js.LICENSE.txt": "/portfolio/static/js/2.8cf0dad2.chunk.js.LICENSE.txt",
-    "static/media/boss.4d01866d.png": "/portfolio/static/media/boss.4d01866d.png",
-    "static/media/initials.c7ad2a43.jpg": "/portfolio/static/media/initials.c7ad2a43.jpg",
-    "static/media/react-hooks.745880fa.png": "/portfolio/static/media/react-hooks.745880fa.png",
-    "static/media/redux-logo.fe04b643.png": "/portfolio/static/media/redux-logo.fe04b643.png"
+    "main.css": "/static/css/main.26ac8093.chunk.css",
+    "main.js": "/static/js/main.33b4178d.chunk.js",
+    "main.js.map": "/static/js/main.33b4178d.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.fa5713dc.js",
+    "runtime-main.js.map": "/static/js/runtime-main.fa5713dc.js.map",
+    "static/css/2.081f420c.chunk.css": "/static/css/2.081f420c.chunk.css",
+    "static/js/2.e13ebca4.chunk.js": "/static/js/2.e13ebca4.chunk.js",
+    "static/js/2.e13ebca4.chunk.js.map": "/static/js/2.e13ebca4.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.081f420c.chunk.css.map": "/static/css/2.081f420c.chunk.css.map",
+    "static/css/main.26ac8093.chunk.css.map": "/static/css/main.26ac8093.chunk.css.map",
+    "static/js/2.e13ebca4.chunk.js.LICENSE.txt": "/static/js/2.e13ebca4.chunk.js.LICENSE.txt",
+    "static/media/boss.4d01866d.png": "/static/media/boss.4d01866d.png",
+    "static/media/initials.c7ad2a43.jpg": "/static/media/initials.c7ad2a43.jpg",
+    "static/media/react-hooks.745880fa.png": "/static/media/react-hooks.745880fa.png",
+    "static/media/redux-logo.fe04b643.png": "/static/media/redux-logo.fe04b643.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.828f207e.js",
+    "static/js/runtime-main.fa5713dc.js",
     "static/css/2.081f420c.chunk.css",
-    "static/js/2.8cf0dad2.chunk.js",
+    "static/js/2.e13ebca4.chunk.js",
     "static/css/main.26ac8093.chunk.css",
-    "static/js/main.3e7ec237.chunk.js"
+    "static/js/main.33b4178d.chunk.js"
   ]
 }
