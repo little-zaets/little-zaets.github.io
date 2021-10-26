@@ -4,7 +4,6 @@ import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import Footer from './components/Footer';
-import icon from './assets/initials.jpg';
 import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
@@ -22,9 +21,9 @@ class App extends React.Component {
         { title: 'Contact', path: '/contact' }
       ],
       home: {
-        title: 'Be Tenacious',
-        subTitle: 'Failure is Just a Milestone to Success',
-        content: 'Check Out my Projects Below'
+        title: 'Hi, I\'m Rina',
+        subTitle: 'I\'m a Web Developer',
+        content: 'Failure is Just a Milestone to Success'
       },
       about: {
         title: 'About Me'
@@ -37,11 +36,11 @@ class App extends React.Component {
   render() {
     return (
       <Router>
-        <Container className="p-0" fluid={true}>
+        <Container className="p-0 d-flex flex-column vh-100" fluid={true}>
           <Navbar className="border-bottom" bg="transparent" expand="lg">
             <Navbar.Brand>
               <h3 className="header-icon">
-                <Link to="/" className="link">
+                <Link to="/" className="link link--icon header-text ">
                   RV
                 </Link>
               </h3>

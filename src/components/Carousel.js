@@ -3,9 +3,9 @@ import ProjectCard from './Card';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import calculator from '../assets/react-hooks.png';
-import robots from '../assets/redux-logo.png';
-import boss from '../assets/boss.png';
+import calculator from '../assets/calculator.png';
+import robots from '../assets/robofriends.png';
+import boss from '../assets/databoss.png';
 
 
 class Carousel extends Component {

@@ -7,7 +7,7 @@ import Col from "react-bootstrap/Col";
 
 const Home = (props) => {
 	return (
-		<Container fluid={true}>
+		<Container className="mb-4" fluid={true}>
 			<Hero title={props.title} subTitle={props.subTitle} content={props.content} />
 			<Carousel />
 		</Container>
