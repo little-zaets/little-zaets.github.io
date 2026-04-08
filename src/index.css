@@ -1,56 +1,204 @@
-* {
-  padding: 0;
-  margin: 0;
-  border: 0;
-  outline: 0;
-  background-color: inherit;
-  color: inherit;
-  font-family: inherit;
-  font-size: inherit;
-  box-shadow: none;
-  box-sizing: border-box;
+@import "tailwindcss";
+
+@theme {
+  --font-poppins: 'Poppins', sans-serif;
+  --font-cinzel: 'Cinzel Decorative', cursive;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-h1,
-h2,
-h3,
-h4 {
-  line-height: 1.2;
-  color: #444;
-}
+@layer base {
+  * {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    background-color: inherit;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    box-shadow: none;
+    box-sizing: border-box;
+  }
 
-h1 {
-  font-size: 4rem;
-}
+  html {
+    scroll-behavior: smooth;
+  }
 
-h2 {
-  font-size: 2rem;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 500;
-}
+  body {
+    color: #333;
+  }
 
-h3 {
-  font-size: 1.5rem;
-}
+  h1, h2, h3, h4 {
+    line-height: 1.2;
+    color: #444;
+  }
 
-h4 {
-  font-size: 1.3rem;
-}
+  h1 { font-size: 4rem; }
 
-ul {
-  list-style-type: none;
-}
-
-a {
-  text-decoration: none !important;
-}
-
-
-@media (max-width: 900px) {
   h2 {
-    font-size: 2.6rem;
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+  }
+
+  h3 { font-size: 1.5rem; }
+  h4 { font-size: 1.3rem; }
+
+  ul { list-style-type: none; }
+
+  a { text-decoration: none !important; }
+
+  p {
+    margin-bottom: 1rem;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (max-width: 900px) {
+    h2 { font-size: 2.6rem; }
+  }
+}
+
+@layer components {
+  /* Project cards */
+  .g-card {
+    margin: 10px;
+    width: 280px;
+  }
+
+  .g-card-image {
+    border-radius: 10px;
+    width: 280px;
+    height: 350px;
+    box-shadow: 0 0 3px 1px #ccc;
+  }
+
+  .g-card-image:hover { cursor: pointer; }
+
+  .g-card-info {
+    margin-top: 10px;
+    min-height: 100px;
+  }
+
+  .g-card-title { font-size: 24px; margin: 0; }
+  .g-card-sub-title { font-size: 16px; margin: 0; }
+
+  /* Form feedback */
+  .success-msg { color: #57A773; padding: 10px 15px; }
+  .err-msg { color: #EE6352; padding: 10px 15px; }
+
+  /* Nav links */
+  .nav-link-custom {
+    color: #555;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    padding-right: 20px;
+    transition: color 0.2s ease-in-out;
+  }
+  .nav-link-custom:hover { color: #444; }
+
+  /* Animated text link */
+  .link {
+    display: block;
+    text-decoration: none;
+    transition: transform 0.2s ease-in-out;
+    color: #555;
+  }
+
+  /* Animated icon link (underline fill on hover) */
+  .link--icon {
+    position: relative;
+    transition: transform 0.2s ease-in-out;
+    color: #6C7581;
+    overflow: hidden;
+    z-index: 1;
+    padding: 0;
+  }
+
+  .link--icon:hover,
+  .link--icon:focus {
+    color: #555;
+    cursor: pointer;
+  }
+
+  .link--icon::before {
+    content: '';
+    display: inline;
+    right: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 5px;
+    border-bottom: 2px solid #555;
+    z-index: -1;
+    transition: right 0.2s ease-in-out;
+  }
+
+  .link--icon:hover::before,
+  .link--icon:focus::before {
+    right: 0;
+  }
+
+  .link--icon:active { transform: translateY(-5px); }
+
+  /* Brand logo */
+  .header-text {
+    text-shadow: 1px 1px 1px #929eaa;
+    color: rgb(54, 54, 54);
+    padding-right: 5px;
+  }
+
+  .header-icon {
+    margin-bottom: 0;
+    font-family: 'Cinzel Decorative', cursive;
+  }
+
+  /* Submit button with fill-on-hover animation */
+  .btn {
+    display: block;
+    color: #444 !important;
+    text-align: left;
+    cursor: pointer;
+    padding: 1em;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .btn--outline {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #555 !important;
+    z-index: 1;
+  }
+
+  .btn:hover,
+  .btn:focus {
+    color: #fcfcfc !important;
+  }
+
+  .btn--outline::before {
+    content: '';
+    position: absolute;
+    background-color: #555;
+    right: 100%;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    transition: right 0.2s ease-in-out;
+  }
+
+  .btn--outline:hover::before,
+  .btn--outline:focus::before {
+    right: 0;
+  }
+
+  /* Profile picture */
+  .profilepic {
+    border-radius: 50%;
+    width: 200px;
+    margin-bottom: 20px;
   }
 }
